@@ -1,4 +1,4 @@
-## [v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin) for [shadowsocks-android](https://github.com/shadowsocks/shadowsocks-android)
+# <img src="app/src/main/web_hi_res_512.png" alt="[logo]" width="48"/> [v2ray-plugin](https://github.com/shadowsocks/v2ray-plugin) for [shadowsocks-android](https://github.com/shadowsocks/shadowsocks-android)
 
 [![CircleCI](https://circleci.com/gh/shadowsocks/v2ray-plugin-android.svg?style=svg)](https://circleci.com/gh/shadowsocks/v2ray-plugin-android)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
@@ -17,7 +17,7 @@
 ### PREREQUISITES
 
 * JDK 1.8
-* Go 1.11+
+* Go 1.15+
 * Android SDK
   - Android NDK r19+
 
@@ -34,9 +34,7 @@ This plugin is an official plugin thus you can see [shadowsocks-android](https:/
 
 ## OPEN SOURCE LICENSES
 
-<ul>
-    <li>v2ray: <a href="https://raw.githubusercontent.com/v2ray/v2ray-core/master/LICENSE">MIT</a></li>
-</ul>
+* [v2ray-core](https://github.com/v2fly/v2ray-core): [MIT](https://github.com/v2fly/v2ray-core/blob/master/LICENSE)
 
 ### LICENSE
 
