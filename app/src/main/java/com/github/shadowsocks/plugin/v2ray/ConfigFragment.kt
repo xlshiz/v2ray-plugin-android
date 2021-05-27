@@ -72,9 +72,9 @@ class ConfigFragment : PreferenceFragmentCompat(), Preference.OnPreferenceChange
     fun onInitializePluginOptions(options: PluginOptions) {
         mode.value = when {
             options["mode"] ?: "websocket" == "quic" -> "quic-tls"
-            options["mode"] == "websocket-tls" -> "websocket-tls"
-            options["mode"] == "grpc" -> "grpc"
-            options["mode"] == "grpc-tls" -> "grpc-tls"
+            options["mode"] == null && "tls" in options -> "websocket-tls"
+            options["mode"] == "grpc" && "tls" !in options -> "grpc"
+            options["mode"] == "grpc" && "tls" in options -> "grpc-tls"
             else -> "websocket-http"
         }.also { onPreferenceChange(null, it) }
         host.text = options["host"] ?: "cloudfront.com"
