@@ -17,7 +17,7 @@ val currentFlavor get() = gradle.startParameter.taskRequests.toString().let { ta
 
 android {
     val javaVersion = JavaVersion.VERSION_1_8
-    compileSdkVersion(30)
+    compileSdkVersion(31)
     compileOptions {
         sourceCompatibility = javaVersion
         targetCompatibility = javaVersion
@@ -26,9 +26,9 @@ android {
     defaultConfig {
         applicationId = "com.github.shadowsocks.plugin.v2ray"
         minSdkVersion(23)
-        targetSdkVersion(30)
-        versionCode = 5000700
-        versionName = "5.0.7"
+        targetSdkVersion(31)
+        versionCode = 5000800
+        versionName = "5.0.8"
         testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
